@@ -1,15 +1,15 @@
 {
   "_type": "export",
   "__export_format": 4,
-  "__export_date": "2021-12-16T14:19:04.951Z",
-  "__export_source": "insomnia.desktop.app:v2021.4.1",
+  "__export_date": "2021-12-16T21:43:38.002Z",
+  "__export_source": "insomnia.desktop.app:v2021.5.3",
   "resources": [
     {
       "_id": "req_ba511fb66e7446ecb4287dd776cba4d6",
       "parentId": "fld_4e71862cf8d54c52888ced60ebe9c8c9",
       "modified": 1639664149034,
       "created": 1639487190370,
-      "url": "{{ _.base_url }}/send-email",
+      "url": "{{ _.base_url }}send-email",
       "name": "Send Email",
       "description": "This routes gets the data of the logged user and send to the advertiser of the republic.\n\n```response:200\n{\n  \"msg\": \"email sent\"\n}\n```\n\n",
       "method": "POST",
@@ -60,7 +60,7 @@
       "parentId": null,
       "modified": 1634235605708,
       "created": 1634235605708,
-      "name": "My Collection",
+      "name": "Reppy",
       "description": "",
       "scope": "collection",
       "_type": "workspace"
@@ -70,7 +70,7 @@
       "parentId": "fld_70529d9455a849d1851c3eea54dabf83",
       "modified": 1639664244476,
       "created": 1639487258682,
-      "url": "{{ _.base_url }}republic/republic_id/images/picture_id",
+      "url": "{{ _.base_url }}republic/republic_id/picture/picture_id",
       "name": "Delete Image",
       "description": "republic_id = id of the republic,\n\npicture_id = id of the picture\n\n```response:204\n{}\n```\n",
       "method": "DELETE",
@@ -118,7 +118,7 @@
       "parentId": "fld_70529d9455a849d1851c3eea54dabf83",
       "modified": 1639664252419,
       "created": 1639487301002,
-      "url": "{{ _.base_url }}republic/republic_id/images/picture_id",
+      "url": "{{ _.base_url }}republic/republic_id/picture/picture_id",
       "name": "Update Image",
       "description": "republic_id = id of the republic,\n\npicture_id = id of the picture\n\n```response:202\n {\n \"picture_url\": \"http://www.jornaldocampus.usp.br/wp-content/uploads/2019/10/IMG_20191015_111338.jpg\"\n }\n```",
       "method": "PATCH",
@@ -334,7 +334,7 @@
     {
       "_id": "req_fdebb67d15ea4056b9407f0997df68c0",
       "parentId": "fld_961085c5010842e78701aa22b9e833ad",
-      "modified": 1639663697178,
+      "modified": 1639690942884,
       "created": 1639156840406,
       "url": "{{ _.base_url }}login",
       "name": "SignIn",
@@ -342,7 +342,7 @@
       "method": "POST",
       "body": {
         "mimeType": "application/json",
-        "text": "{\n    \"email\":\"rony@gmail.com\",\n\t\t\"password\": \"123567\"\n}\n"
+        "text": "{\n    \"email\":\"arlequina@gmail.com\",\n\t\t\"password\": \"123456\"\n}\n"
       },
       "parameters": [],
       "headers": [
@@ -394,7 +394,8 @@
           "value": "Bearer {{ _.token }}",
           "description": "",
           "disabled": false
-        }
+        },
+        { "name": "Content-Type", "value": "application/json" }
       ],
       "authentication": {},
       "metaSortKey": -1639485477825,
@@ -528,7 +529,7 @@
       "parentId": "wrk_4c0ee46125e148099948b7b33ade68c5",
       "modified": 1634235605718,
       "created": 1634235605718,
-      "fileName": "My Collection",
+      "fileName": "Reppy",
       "contents": "",
       "contentType": "yaml",
       "_type": "api_spec"
